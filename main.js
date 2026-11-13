@@ -39,7 +39,7 @@ function update_expense() {
 
 function delete_expense() {
     exp_to_delete = prompt("Enter the Name of Expense To Delete :");
-    let status = expenses.includes(exp_to_update);
+    let status = expenses.includes(exp_to_delete);
     if (status==true){
         let no = expenses.indexOf(exp_to_delete);
         expenses.splice(no,1);
